@@ -2,14 +2,10 @@ import altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
-
-
-# num_points = st.slider("Number of points in spiral", 1, 10000, 1100)
-# num_turns = st.slider("Number of turns in spiral", 1, 300, 31)
-import torch
+# import torch
 from transformers import pipeline
 
-device = "cuda:0" if torch.cuda.is_available() else "cpu"
+# device = "cuda:0" if torch.cuda.is_available() else "cpu"
 pipe = pipeline(
     "automatic-speech-recognition", model="openai/whisper-large-v3", device=device
 )
