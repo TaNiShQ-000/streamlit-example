@@ -2,13 +2,13 @@ import altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
-import torch
-from transformers import pipeline
+# import torch
+# from transformers import pipeline
 
-device = "cuda:0" if torch.cuda.is_available() else "cpu"
-pipe = pipeline(
-    "automatic-speech-recognition", model="openai/whisper-large-v3", device=device
-)
+# device = "cuda:0" if torch.cuda.is_available() else "cpu"
+# pipe = pipeline(
+#     "automatic-speech-recognition", model="openai/whisper-large-v3", device=device
+# )
 
 st.write("What is data science ? ")
 
